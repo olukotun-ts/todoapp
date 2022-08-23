@@ -1,0 +1,14 @@
+version: 2.1
+
+workflows:
+  version: 2.1
+  jobs:
+    - deploy
+
+jobs:
+  deploy:
+    docker:
+      - image: cimg/node:stable
+    steps:
+      - checkout
+      
